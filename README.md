@@ -6,7 +6,7 @@ O plano da disciplina está disponível [aqui](./media/sgbd-2024-2-bcc-plano.pdf
 
 ### `Para refletir ...`
 
-- ???
+- Qual a distinção entre _arquivo_, _bloco_ e _registro_?
 
 ### `Tópicos ativos ...`
 
