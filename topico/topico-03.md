@@ -72,6 +72,8 @@ A hierarquia de memória objetiva que:
 - a grande maioria dos dados/instruções `'necessários'` esteja disponível nos níveis de memória mais altos (_cache_, memória principal), e pouquíssimos acessos sejam mandatórios à memória secundária.
 - a maioria dos programas apresenta características de localidade.
 
+"_On-board cache is found on the same chip as the microprocessor itself, and additional level-2 cache is found on another chip. Data and instructions are moved to cache from main memory when they are needed by the processor_". (Garcia-Molina)
+
 ```diff
 - O que é o PRINCÍPIO DA LOCALIDADE ?
 ```
@@ -177,6 +179,12 @@ Em geral, um único número chamado LBA (endereço de _bloco lógico_), que é u
 
 #### &#x267B;&#x26BE;&#x270D; <ins>BUFFER</ins>
 
+"_Normally, data moves between adjacent levels of the hierarchy_:<br>
+&#x270D; _At the secondary and tertiary levels, accessing the desired data or finding the desired place to store data takes a great deal of time, so each level is organized <ins>to transfer large amounts of data</ins> to or from the level below, whenever any data at all is needed_.<br>
+&#x270D; _The disk is organized into disk blocks (or just blocks, or as in operating systems, pages) of perhaps 4–64 kilobytes_.<br>
+&#x270D; _Entire blocks are moved to or from a continuous section of main memory called a <ins>buffer</ins>_.<br>
+&#x270D; _Thus, a key technique for speeding up database operations is to arrange data so that when one piece of a disk block is needed, it is likely that other data on the same block will also be needed at about the same time_". (Garcia-Molina)
+
 Um **_buffer_** é uma área reservada <ins>contígua</ins> na memória principal (armazenamento primário) para armazenar um bloco:
 - Para um comando de leitura, o bloco do disco é copiado para o _buffer_;
 - Para um comando de gravação, o conteúdo do _buffer_ é copiado para o bloco do disco.
@@ -187,3 +195,17 @@ Vários blocos contíguos, denominados **_cluster_**, podem ser transferidos com
 <hr style="border:2px solid blue">
 
 #### <ins>EXERCÍCIO:</ins>
+
+Analise as sentenças abaixo:<br>
+:question: Um dispositivo volátil "esquece" o que está armazenado nele quando a energia acaba.<br>
+:question: Um dispositivo não volátil, por outro lado, deve manter seu conteúdo intacto, mesmo por longos períodos, quando o dispositivo é desligado ou há uma falha de energia.<br>
+:question: A questão da volatilidade é importante, porque uma das capacidades características de um SGBD é a capacidade de reter seus dados mesmo na presença de erros, como falhas de energia.<br>
+:question: A memória principal é geralmente volátil (embora certos tipos de chips de memória - mais caros - possam manter seus dados após uma falha de energia).<br>
+:exclamation: Uma parte significativa da complexidade em um SGBD vem do seguinte requisito: nenhuma alteração no banco de dados pode ser considerada final (definitiva), até que tenha migrado para armazenamento secundário não volátil.
+
+As recomendações abaixo são válidas para "modelos de E/S" que não possuem partes que se movem (por exemplo, discos magnéticos _vs._ SSDs) ?<br>
+:snowflake: Coloque os blocos que são acessados ​​juntos no mesmo cilindro, para que possamos evitar o tempo de busca e, possivelmente, a latência rotacional também.<br>
+:snowflake: Divida os dados entre vários dispositivos menores em vez de um grande. Ter mais conjuntos de cabeçotes que podem ir atrás dos blocos independentemente pode aumentar o número de acessos ao bloco por unidade de tempo.<br>
+:sunny: "Espelhar" um disco: fazer duas ou mais cópias dos dados em discos diferentes. Além de salvar os dados caso um dos discos falhe, essa estratégia, como dividir os dados entre vários discos, nos permite acessar vários blocos de uma vez.<br>
+:sunny: Use um algoritmo de agendamento de disco (seja no sistema operacional, no SGBD ou no controlador de dispositivo), para selecionar a ordem em que vários blocos solicitados serão lidos ou gravados.<br>
+:sunny: Busque previamente os blocos para a memória principal em antecipação ao seu uso posterior.
