@@ -15,7 +15,7 @@
 
 <hr style="border:2px solid blue">
 
-#### <ins>RECAPTULANDO</ins> ...
+#### <ins>RECAPTULANDO</ins> ... _BUFFER_ ...
 
 Um **_buffer_** é uma área reservada <ins>contígua</ins> na memória principal (armazenamento primário) para armazenar um bloco:
 - Para um comando de leitura, o bloco do disco é copiado para o _buffer_;
@@ -23,6 +23,21 @@ Um **_buffer_** é uma área reservada <ins>contígua</ins> na memória principa
 
 Vários blocos contíguos, denominados **_cluster_**, podem ser transferidos como uma unidade:
 - Nesse caso, o tamanho do _buffer_ é ajustado para corresponder ao número de _bytes_ no _cluster_.
+
+#### <ins>RECAPTULANDO</ins> ... _DOMINÂNCIA DO CUSTO DE E/S_ ...
+
+Suponha um <ins>computador simples</ins>:
+- Um processador, um controlador de disco e um disco.
+- Um SGBD está em execução, e vários usuários que estão realizando consultas e modificações no banco de dados.
+
+Sobre a gerência de memória:
+- Inicialmente, cada parte do banco de dados que um dos usuários acessa terá que ser recuperada inicialmente do disco.
+- O banco de dados em si é muito grande para caber na memória principal.
+- Partes "importantes" do banco de dados podem ser armazenadas em _buffer_ na memória principal, mas ...
+  - geralmente, 
+ 
+ 11Por enquanto, suponha que nosso computador tenha um processador, um controlador de disco e um disco. 
+
 
 <hr style="border:2px solid blue">
 
