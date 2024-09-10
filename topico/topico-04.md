@@ -29,7 +29,7 @@ Vários blocos contíguos, denominados **_cluster_**, podem ser transferidos com
 #### <ins>RECAPTULANDO</ins> ... _DOMINÂNCIA DO CUSTO DE E/S_ ...
 
 Suponha um <ins>computador simples</ins>:
-- Um processador, um controlador de disco e um disco.
+- Um processador (CPU), um processador de E/S, um disco.
 - Um SGBD está em execução:
   - vários usuários que estão realizando <ins>consultas</ins> e <ins>modificações</ins> no banco de dados.
 
