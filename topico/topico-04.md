@@ -35,7 +35,7 @@ Suponha um <ins>computador simples</ins>:
 
 Sobre a <ins>gerência de memória</ins>:
 - O banco de dados em si é muito grande para caber na memória principal.
-- Inicialmente, cada parte do banco de dados que um dos usuários acessa terá que ser recuperada inicialmente do disco:
+- Inicialmente, cada parte do banco de dados que um dos usuários acessa terá que ser recuperada do disco:
   - `partes "importantes"` do banco de dados podem ser armazenadas (mantidas) em _buffer_ na memória principal. 
  
 Sobre a <ins>**dominância do custo de E/S**</ins>:
