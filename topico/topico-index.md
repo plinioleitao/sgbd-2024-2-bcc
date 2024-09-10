@@ -1,3 +1,4 @@
+[Tópico 05](./topico-05.md) - Estruturas de armazenamento (3/10) - Registros em blocos, cabeçalho de arquivo/bloco, alocação de blocos<br>
 [Tópico 04](./topico-04.md) - Estruturas de armazenamento (2/10) - _Buffering_ de blocos, registros de tamanhos fixo e variável<br>
 [Tópico 03](./topico-03.md) - Estruturas de armazenamento (1/10) - Armazenamento físico, arquivo, bloco, registro<br>
 [Tópico 02d](./topico-02d.md) - Exercícios de revisão (4/4)<br>
