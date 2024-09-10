@@ -59,7 +59,7 @@ Para lidar com a <ins>incompatibilidade de velocidades</ins> entre uma CPU e a m
 &nbsp;&nbsp;&nbsp;&nbsp; :red_circle: enquanto um _buffer_ está sendo lido ou gravado pelo processador de E/S;<br>
 &nbsp;&nbsp;&nbsp;&nbsp; :red_circle: a CPU pode processar dados em outro _buffer_.
 
-#### &#x267B;&#x26BE;&#x270D; <ins>_DOUBLE BUFFERING_</ins>
+#### &#x267B;&#x26BE;&#x270D; <ins>_DOUBLE BUFFERING_ (_PREFETCHING_, _READ-AHEAD_)</ins>
 
 A figura abaixo ilustra o emprego de **_buffer_ duplo** (_double buffering_):<br>
 &#9745; Dois _buffers_ - A e B - são utilizados para permitir leitura de dados e processamento de dados em paralelo;<br>
