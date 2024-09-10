@@ -30,7 +30,8 @@ Vários blocos contíguos, denominados **_cluster_**, podem ser transferidos com
 
 Suponha um <ins>computador simples</ins>:
 - Um processador, um controlador de disco e um disco.
-- Um SGBD está em execução, e vários usuários que estão realizando consultas e modificações no banco de dados.
+- Um SGBD está em execução:
+  - vários usuários que estão realizando <ins>consultas</ins> e <ins>modificações</ins> no banco de dados.
 
 Sobre a <ins>gerência de memória</ins>:
 - O banco de dados em si é muito grande para caber na memória principal.
