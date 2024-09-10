@@ -242,6 +242,6 @@ Analise as sentenças abaixo:
 
 Uma forma simples para implementar _checksum_ é baseada na paridade de um conjunto de bits.
 - Se houver um número ímpar de 1s entre uma coleção de bits, dizemos que os bits têm paridade ímpar e adicionamos um bit de paridade que é 1.
-- Da mesma forma, se houver um número par de 1s entre os bits, então dizemos que os bits têm paridade par e adicionamos o bit de paridade 0. Como resultado:
+- Da mesma forma, se houver um número par de 1s entre os bits, então dizemos que os bits têm paridade par e adicionamos o bit de paridade 0.
 - Em suma, o número de 1s entre uma coleção de bits e seu bit de paridade é sempre par.
 - Essa estratégia é sujeita a erros? Se sim, uma forma para mitigá-la é ter oito bits de paridade para cada byte de dados, um bit de paridade para cada bit de dados?
