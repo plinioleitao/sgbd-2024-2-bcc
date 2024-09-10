@@ -24,6 +24,8 @@ Um **_buffer_** é uma área reservada <ins>contígua</ins> na memória principa
 Vários blocos contíguos, denominados **_cluster_**, podem ser transferidos como uma unidade:
 - Nesse caso, o tamanho do _buffer_ é ajustado para corresponder ao número de _bytes_ no _cluster_.
 
+<hr style="border:2px solid blue">
+
 #### <ins>RECAPTULANDO</ins> ... _DOMINÂNCIA DO CUSTO DE E/S_ ...
 
 Suponha um <ins>computador simples</ins>:
