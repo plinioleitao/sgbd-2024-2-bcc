@@ -15,7 +15,7 @@
 
 <hr style="border:2px solid blue">
 
-#### <ins>RECAPTULANDO</ins> ... _BUFFER_ ...
+#### <ins>RECAPTULANDO</ins> ... _`BUFFER`_ ...
 
 Um **_buffer_** é uma área reservada <ins>contígua</ins> na memória principal (armazenamento primário) para armazenar um bloco:
 - Para um comando de leitura, o bloco do disco é copiado para o _buffer_;
@@ -26,7 +26,7 @@ Vários blocos contíguos, denominados **_cluster_**, podem ser transferidos com
 
 <hr style="border:2px solid blue">
 
-#### <ins>RECAPTULANDO</ins> ... _DOMINÂNCIA DO CUSTO DE E/S_ ...
+#### <ins>RECAPTULANDO</ins> ... _`DOMINÂNCIA DO CUSTO DE E/S`_ ...
 
 Suponha um <ins>computador simples</ins>:
 - Um processador (CPU), um processador de E/S, um disco.
