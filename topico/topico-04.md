@@ -229,4 +229,19 @@ Analise as sentenças abaixo:
 - É bastante desejável ter um índice em R para identificar o bloco de disco no qual a _tupla_ com valor-chave k está.
 - No entanto, geralmente "não é importante" se o índice nos diz onde no bloco essa _tupla_ está.
 
+<hr style="border:2px solid blue">
 
+#### <ins>EXERCÍCIO:</ins>
+
+Uma forma de validar as operações de E/S é o emprego de _checksum_<br>
+Analise as sentenças abaixo:
+- _Checksum_ representa alguns bits no conteúdo de um bloco, cujo conteúdo depende dos valores dos demais bits de dados armazenados no bloco.
+- Se, na leitura, o _checksum_ não for adequado para os bits de dados, então há um erro na leitura.
+- Se o _checkum_ for adequado, ainda há uma pequena chance de que o bloco não tenha sido lido corretamente:
+  - mas o emprego de "muitos" bits de _checksum_ pode tornar baixa a probabilidade "falso positivo".
+
+Uma forma simples para implementar _checksum_ é baseada na paridade de um conjunto de bits.
+- Se houver um número ímpar de 1s entre uma coleção de bits, dizemos que os bits têm paridade ímpar e adicionamos um bit de paridade que é 1.
+- Da mesma forma, se houver um número par de 1s entre os bits, então dizemos que os bits têm paridade par e adicionamos o bit de paridade 0. Como resultado:
+- Em suma, o número de 1s entre uma coleção de bits e seu bit de paridade é sempre par.
+- Essa estratégia é sujeita a erros? Se sim, uma forma para mitigá-la é ter oito bits de paridade para cada byte de dados, um bit de paridade para cada bit de dados?
