@@ -30,14 +30,14 @@ Suponha um <ins>computador simples</ins>:
 - Um processador, um controlador de disco e um disco.
 - Um SGBD está em execução, e vários usuários que estão realizando consultas e modificações no banco de dados.
 
-Sobre a gerência de memória:
-- Inicialmente, cada parte do banco de dados que um dos usuários acessa terá que ser recuperada inicialmente do disco.
+Sobre a <ins>gerência de memória</ins>:
 - O banco de dados em si é muito grande para caber na memória principal.
-- Partes "importantes" do banco de dados podem ser armazenadas em _buffer_ na memória principal, mas ...
-  - geralmente, 
+- Inicialmente, cada parte do banco de dados que um dos usuários acessa terá que ser recuperada inicialmente do disco:
+  - `partes "importantes"` do banco de dados podem ser armazenadas (mantidas) em _buffer_ na memória principal. 
  
- 11Por enquanto, suponha que nosso computador tenha um processador, um controlador de disco e um disco. 
-
+Sobre a <ins>**dominância do custo de E/S**</ins>:
+- O tempo gasto para realizar um acesso ao disco é muito maior do que o tempo provavelmente usado para manipular esses dados na memória principal.
+- O número de acessos de bloco (E/S de disco) é uma "boa aproximação" do tempo necessário para o algoritmo e deve ser minimizado.
 
 <hr style="border:2px solid blue">
 
