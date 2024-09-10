@@ -39,7 +39,7 @@ Sobre a <ins>gerência de memória</ins>:
   - `partes "importantes"` do banco de dados podem ser armazenadas (mantidas) em _buffer_ na memória principal. 
  
 Sobre a <ins>**dominância do custo de E/S**</ins>:
-- O tempo gasto para realizar um acesso ao disco é muito maior do que o tempo provavelmente usado para manipular esses dados na memória principal.
+- O tempo gasto para realizar um acesso ao disco é `muito maior` do que o tempo provavelmente usado para manipular dados na memória principal.
 - O número de acessos de bloco (E/S de disco) é uma "boa aproximação" do tempo necessário para o algoritmo e deve ser minimizado.
 
 <hr style="border:2px solid blue">
