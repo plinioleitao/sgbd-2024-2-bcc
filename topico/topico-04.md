@@ -42,6 +42,9 @@ Sobre a <ins>**dominância do custo de E/S**</ins>:
 - O tempo gasto para realizar um acesso ao disco é `muito maior` do que o tempo provavelmente usado para manipular dados na memória principal.
 - O número de acessos de bloco (E/S de disco) é uma "boa aproximação" do tempo necessário para o algoritmo e deve ser minimizado.
 
+> REFLEXÃO:<br>Suponha um banco de dados que contém uma relação R. Uma consulta solicita a _tupla_ de R, que atende um certo valor-chave k.
+>> É bastante desejável ter um índice em R para identificar o bloco de disco no qual a _tupla_ com valor-chave k está.<br>No entanto, geralmente não é importante se o índice nos diz onde no bloco essa _tupla_ está.
+
 <hr style="border:2px solid blue">
 
 ### 4. <ins>_BUFFERING_ DE BLOCOS</ins>
