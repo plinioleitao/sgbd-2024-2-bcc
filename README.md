@@ -6,12 +6,15 @@ O plano da disciplina está disponível [aqui](./media/sgbd-2024-2-bcc-plano.pdf
 
 ### `Para refletir ...`
 
-- Qual a distinção entre _arquivo_, _bloco_ e _registro_?
+- _Hashing_ é uma _organização de arquivo_ ou _método de acesso_ ?
 
 ### `Tópicos ativos ...`
 
-- [Tópico 03](./topico/topico-03.md)
-- [Tópico 04](./topico/topico-04.md)
+- [Tópico 05](./topico/topico-05.md)
+- [Tópico 06](./topico/topico-06.md)
+- [Tópico 07](./topico/topico-07.md)
+- [Tópico 08](./topico/topico-08.md)
+- [Tópico 09](./topico/topico-09.md)
 - [Todos os tópicos](topico/topico-index.md)
 - [Análise das atividades](./topico/tresultado.md)
 
