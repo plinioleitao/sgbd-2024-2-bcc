@@ -6,7 +6,7 @@ O plano da disciplina está disponível [aqui](./media/sgbd-2024-2-bcc-plano.pdf
 
 ### `Para refletir ...`
 
-- _Hashing_ é uma _organização de arquivo_ ou _método de acesso_ ?
+- _Hashing_ é uma _organização de arquivo_ ou um _método de acesso_ ?
 
 ### `Tópicos ativos ...`
 
