@@ -43,7 +43,7 @@
   - a <ins>entrada</ins> da função **h** é [o valor de] um dado;
   - a <ins>saída</ins> da função **h** é o endereço (a localização) desse dado:
       - o endereço (a localização) é <ins>um índice</ins> (uma posição relativa) na **tabela _hash_**. 
-- A escolha da **função _hash_** é <ins>sensível para a eficácia</ins> da estratégia de busca.
+- A escolha da **função _hash_** é <ins>sensível para a eficiência</ins> da estratégia de busca.
 <br>
 
 > <ins>_Hashing_</ins> é comumente aplicado para dados em <ins>mémória principal</ins>:
