@@ -87,7 +87,7 @@ Considere o exemplo:<br>
 
 <hr style="border:2px solid blue">
 
-#### &#x267B; Inserir: <ins>João da Silva</ins>; Binário da função _hash_ = <ins>01011....</ins><br>
+#### &#x267B; Inserir: <ins>João da Silva</ins>; _Bits_ da função _hash_ em ordem inversa = <ins>01011....</ins><br>
 &#9888; O diretório foi iniciado com **d=1**, ou seja, duas entradas (**2<sup>d</sup> = 2<sup>1</sup>**):<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x270D; as entradas são {0} e {1}.<br>
 &#9888; Um _bucket_ no endereço A1A1A1A1 foi alocado.<br>
@@ -133,7 +133,7 @@ Considere o exemplo:<br>
 
 <hr style="border:2px solid blue">
 
-#### &#x267B; Inserir: <ins>Maria de Alencar</ins>; Binário da função _hash_ = <ins>10011...</ins><br>
+#### &#x267B; Inserir: <ins>Maria de Alencar</ins>; _Bits_ da função _hash_ em ordem inversa = <ins>10011...</ins><br>
 &#9888; Um _bucket_ no endereço C3C3C3C3C3 foi alocado.<br>
 &#x26BE; Entradas no diretório = 2 (2<sup>1</sup>)<br>
 &#x26BE; _Buckets_ alocados = 2
@@ -177,7 +177,7 @@ Considere o exemplo:<br>
 
 <hr style="border:2px solid blue">
 
-#### &#x267B; Inserir: <ins>Ana de Paula</ins>; Binário da função _hash_ = <ins>10101...</ins><br>
+#### &#x267B; Inserir: <ins>Ana de Paula</ins>; _Bits_ da função _hash_ em ordem inversa = <ins>10101...</ins><br>
 &#9888; Nenhum _bucket_ foi alocado.<br>
 &#x26BE; Entradas no diretório = 2 (2<sup>1</sup>)<br>
 &#x26BE; _Buckets_ alocados = 2
@@ -228,7 +228,7 @@ Considere o exemplo:<br>
 
 <hr style="border:2px solid blue">
 
-#### &#x267B; Inserir: <ins>Pedro Soares</ins>; Binário da função _hash_ = <ins>11011...</ins><br>
+#### &#x267B; Inserir: <ins>Pedro Soares</ins>; _Bits_ da função _hash_ em ordem inversa = <ins>11011...</ins><br>
 &#9888; O tamanho do diretório foi duplicado:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x270D; o **fator d** (profundidade global) foi modificado: **d=2**, ou seja, quatro entradas (**2<sup>d</sup> = 2<sup>2</sup>**):<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x270D; as entradas são {00}, {01}, {10} e {11}.<br>
@@ -291,7 +291,7 @@ Considere o exemplo:<br>
 
 <hr style="border:2px solid blue">
 
-#### &#x267B; Inserir: <ins>Glória Barbosa</ins>; Binário da função _hash_ = <ins>00011...</ins><br>
+#### &#x267B; Inserir: <ins>Glória Barbosa</ins>; _Bits_ da função _hash_ em ordem inversa = <ins>00011...</ins><br>
 &#9888; Nenhum _bucket_ foi alocado.<br>
 &#x26BE; Entradas no diretório = 4 (2<sup>2</sup>)<br>
 &#x26BE; _Buckets_ alocados = 3
@@ -358,7 +358,7 @@ Considere o exemplo:<br>
 
 <hr style="border:2px solid blue">
 
-#### &#x267B; Inserir: <ins>Ricardo Afonso</ins>; Binário da função _hash_ = <ins>10111...</ins><br>
+#### &#x267B; Inserir: <ins>Ricardo Afonso</ins>; _Bits_ da função _hash_ em ordem inversa = <ins>10111...</ins><br>
 &#9888; O tamanho do diretório foi duplicado:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x270D; o **fator d** (profundidade global) foi modificado: **d=3**, ou seja, oito entradas (**2<sup>d</sup> = 2<sup>3</sup>**):<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x270D; as entradas são {000}, {001}, {010}, {011}, {100}, {101}, {110} e {111}.<br>
