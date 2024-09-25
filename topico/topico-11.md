@@ -55,7 +55,7 @@ Considere o exemplo:<br>
 &#9888; Cada _bucket_ pode acomodar <ins>até dois registros</ins>.<br>
 &#9888; Abaixo está a ordem de inclusão de registros.
 
-|Sequência<br>de inclusão|Chave de _hash_|_Bits_ menos significativos<br>da função _hash_|_Bits_ em ordem inversa|
+|Sequência<br>de inclusão|Chave de _hash_|_Bits_ menos significativos<br>da função _hash_|_Bits_ da função _hash_<br>em ordem inversa|
 |:-:|:-|:-:|:-:|
 |01|João da Silva|**`{...11010}`**|01011...|
 |02|Maria de Alencar|**`{...11001}`**|10011...|
