@@ -1,3 +1,4 @@
+[Tópico 12](./topico-12.md) - Estruturas de armazenamento (10/10) - Organização de arquivos _hashing_ (4/4)<br>
 [Tópico 11](./topico-11.md) - Estruturas de armazenamento (9/10) - Organização de arquivos _hashing_ (3/4)<br>
 [Tópico 10](./topico-10.md) - Estruturas de armazenamento (8/10) - Organização de arquivos _hashing_ (2/4)<br>
 [Tópico 09](./topico-09.md) - Estruturas de armazenamento (7/10) - Organização de arquivos _hashing_ (1/4)<br>
