@@ -82,4 +82,229 @@ Observar o conteúdo da figura abaixo:
 
 #### &#x267B;&#x26BE;&#x270D; <ins>_HASHING_ LINEAR - EXEMPLO</ins>
 
-**_`UNDER CONSTRUCTION ...`_** :factory:
+Apresente o processo de inserção da seguinte sequência de chaves:<br>
+&#x26BE; 3, 2, 4, 1, 8, 14, 5, 10, 7, 24, 17, 13, 15.
+
+Parâmetros:<br>
+&#x26BE; Regra para divisão de _buckets_: fator de carga (_load factor_) = 0.7<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; a divisão de _bucket_ ocorre quando **ocupação > 0.7**.<br>
+&#x26BE; Inicialmente **M = 4** (M: tamanho da área primária)<br>
+&#x26BE; Função _hash_: **h<sub>j</sub> (K) = K mod (2<sup>j</sup> * M)** , para j = 0, 1, 2, ...<br>
+&#x26BE; Capacidade de _bucket_ = 02 registros.
+
+<hr style="border:2px solid blue">
+
+#### &#x267B; FASE 0 &#8212; n = 0
+
+Na figura abaixo:<br>
+&#x270D; Quatro _buckets_ foram inicialmente alocados (M=4).<br>
+&#x270D; O fator **n** denota o <ins>número de novo _buckets_ alocados</ins>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; **n** é inicializado com zero (**n=0**).<br>
+&#x270D; Registros são <ins>inseridos e distribuídos</ins> entre os _buckets_ baseando-se na função **h<sub>0</sub> (K) = K mod (2<sup>0</sup> * M)**:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; são inseridos os registros com os valores 3, 2, 4, 1, 8;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; a ocupação da estrutura é 62,5\% (5/8).
+
+<table>
+    <tbody>
+       <tr>
+            <td><b><i>Bucket</i></b></td>
+            <td><b>4 ; 8</b></td>
+            <td><b>1</b></td>
+            <td><b>2</b></td>
+            <td><b>3</b></td>
+       </tr>      
+       <tr>
+            <td><b><i>Bucket id</i></b></td>
+            <td><b>#0</b></td>
+            <td><b>#1</b></td>
+            <td><b>#2</b></td>
+            <td><b>#3</b></td>
+       </tr>      
+    </tbody>
+</table>
+
+<hr style="border:2px solid blue">
+
+#### &#x267B; FASE 0 &#8212; n = 1
+
+&#x270D; Ao inserir o registro com valor 14, a estrutura alcança 75% de ocupação (satisfaz regra para a divisão de _bucket_ &#8213; **ocupação > 0.7**):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; um novo _bucket_ é criado (_bucket_ 4);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; O fator **n** é incrementado &#8213; **n = 0 + 1 = 1**;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; ocorre a redistribuição de registros entre _bucket_ original (_bucket_ 0) e novo _bucket_ (_bucket_ 4);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; registros no _bucket_ 0 são redistribídos com a função **h<sub>1</sub> (K) = K mod (2<sup>1</sup> * M) = K mod (2M)**.
+
+<table>
+    <tbody>
+       <tr>
+            <td><b></b></td>
+            <td colspan=4><b>ANTES DA DIVISÃO (n=0)</b></td>
+            <td>---</td>
+            <td colspan=5><b>APÓS A DIVISÃO (n=1)</b></td>
+       </tr>
+       <tr>
+            <td><b><i>Bucket</i></b></td>
+            <td><b>4 ; 8</b></td>
+            <td><b>1</b></td>
+            <td><b>2 ; 14</b></td>
+            <td><b>3</b></td>
+            <td>---</td>
+            <td><b>8</b></td>
+            <td><b>1</b></td>
+            <td><b>2 ; 14</b></td>
+            <td><b>3</b></td>
+            <td><b>4</b></td>
+       </tr>      
+       <tr>
+            <td><b><i>Bucket id</i></b></td>
+            <td><b>#0</b></td>
+            <td><b>#1</b></td>
+            <td><b>#2</b></td>
+            <td><b>#3</b></td>
+            <td>---</td>
+            <td><b>#0</b></td>
+            <td><b>#1</b></td>
+            <td><b>#2</b></td>
+            <td><b>#3</b></td>
+            <td><b>#4</b></td>
+       </tr>      
+    </tbody>
+</table>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../media/arquivo-20.jpg" width="400">
+
+O registro com valor 5 é inserido:<br>
+&#x270D; A estrutura passa a ter 70% de ocupação:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; alcança o limite do fator de carga,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; mas não há a divisão de _bucket_.
+
+<table>
+    <tbody>
+       <tr>
+            <td><b><i>Bucket</i></b></td>
+            <td><b>8</b></td>
+            <td><b>1 ; 5</b></td>
+            <td><b>2 ; 14</b></td>
+            <td><b>3</b></td>
+            <td><b>4</b></td>
+       </tr>      
+       <tr>
+            <td><b><i>Bucket id</i></b></td>
+            <td><b>#0</b></td>
+            <td><b>#1</b></td>
+            <td><b>#2</b></td>
+            <td><b>#3</b></td>
+            <td><b>#4</b></td>
+       </tr>      
+    </tbody>
+</table>
+
+<hr style="border:2px solid blue">
+
+#### &#x267B; FASE 0 &#8212; n = 2
+
+&#x270D; Ao inserir o registro com valor 10:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; o _bucket_ 2 está cheio,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; então o registro é inserido em _bucket_ de _overflow_;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; a estrutura alcança 80% de ocupação (satisfaz regra para a divisão de _bucket_ &#8213; **ocupação > 0.7**):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; um novo _bucket_ é criado (_bucket_ 5);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; O fator **n** é incrementado &#8213; **n = 1 + 1 = 2**;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; ocorre a redistribuição de registros entre _bucket_ original (_bucket_ 1) e novo _bucket_ (_bucket_ 5);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; registros no _bucket_ 1 são redistribídos com a função **h<sub>1</sub> (K) = K mod (2<sup>1</sup> * M) = K mod (2M)**;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; após, a ocupação passa a ser 66,7\% (8/12).
+
+<table>
+    <tbody>
+       <tr>
+            <td><b></b></td>
+            <td colspan=5><b>ANTES DA DIVISÃO (n=1)</b></td>
+            <td>---</td>
+            <td colspan=6><b>APÓS A DIVISÃO (n=2)</b></td>
+       </tr>
+       <tr>
+            <td><b><i>Bucket</i></b></td>
+            <td><b>8</b></td>
+            <td><b>1 ; 5</b></td>
+            <td><b>2 ; 14</b></td>
+            <td><b>3</b></td>
+            <td><b>4</b></td>
+            <td>---</td>
+            <td><b>8</b></td>
+            <td><b>1</b></td>
+            <td><b>2 ; 14</b></td>
+            <td><b>3</b></td>
+            <td><b>4</b></td>
+            <td><b>5</b></td>
+       </tr>      
+       <tr>
+            <td><b><i>Bucket Overflow</i></b></td>
+            <td><b></b></td>
+            <td><b></b></td>
+            <td><b>10</b></td>
+            <td><b></b></td>
+            <td><b></b></td>
+            <td>---</td>
+            <td><b></b></td>
+            <td><b></b></td>
+            <td><b>10</b></td>
+            <td><b></b></td>
+            <td><b></b></td>
+            <td><b></b></td>
+       </tr>      
+       <tr>
+            <td><b><i>Bucket id</i></b></td>
+            <td><b>#0</b></td>
+            <td><b>#1</b></td>
+            <td><b>#2</b></td>
+            <td><b>#3</b></td>
+            <td><b>#4</b></td>
+            <td>---</td>
+            <td><b>#0</b></td>
+            <td><b>#1</b></td>
+            <td><b>#2</b></td>
+            <td><b>#3</b></td>
+            <td><b>#4</b></td>
+            <td><b>#5</b></td>
+       </tr>      
+    </tbody>
+</table>
+
+<hr style="border:2px solid blue">
+
+#### &#x267B; Demais inserções de registros ...
+
+<img src="../media/arquivo-23.jpg" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../media/arquivo-24.jpg" width="300">
+
+<img src="../media/arquivo-25.jpg" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../media/arquivo-26.jpg" width="300">
+
+<img src="../media/arquivo-27.jpg" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../media/arquivo-28.jpg" width="300">
+
+<img src="../media/arquivo-29.jpg" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../media/arquivo-30.jpg" width="300">
+
+<hr style="border:2px solid blue">
+
+#### Em sintese ...
+
+A divisão de _buckets_ pode ocorrer pela monitoração do fator de carga:<br>
+&#x270D; Tal evita que haja a divisão de _buckets_ sempre que ocorrer um _overflow_.<br>
+&#x270D; O fator de carga (_load factor_) pode ser calculado pela fórmula **lf = r/ (bfr * N)**:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; **r** = número [corrente] de registros do arquivo,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; **bfr** = número máximo de registros em um _bucket_,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; **N** = número [corrente] de _buckets_.<br>
+&#x270D; O Fator de carga pode ser usado para dividir ou recombinar _buckets_:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; _buckets_ podem ser recombinados ...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; se o fator de carga for reduzido abaixo de um certo limite,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9888; nesse caso, o **fator n** é decrementado.<br>
+&#x270D; Ou seja, a carga dos _buckets_ pode ser mantida em uma faixa de fator de carga.
+
+Algoritmo de busca para <ins>_Hashing_ Linear</ins>:
+
+function getBucketID (K, j, n)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m ← h<sub>j</sub> (K)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if m < n then m ← h<sub>j+1</sub> (K)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return m
+
+Onde:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**h<sub>j</sub> (K)** e **h<sub>j+1</sub> (K)** são **funções _hash_** aplicadas durante a Fase j<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**n** é um número de _buckets_ criados na **Fase j**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**m** é o resultado do cálculo de uma **função _hash_** para o valor K (**campo _hash_**).
+
