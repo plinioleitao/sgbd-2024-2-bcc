@@ -70,9 +70,9 @@ O <ins>**fator n**</ins> é um <ins>contador</ins>, que determina o <ins>número
 &#x267B; IMPORTANTE: Ao aplicar **h<sub>j</sub>** ao valor <ins>**K**</ins> do **campo _hash_** do registro:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; se **h<sub>j</sub> (K) < n**,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; então o valor resultante de **h<sub>j+1</sub> (K)** determina o _bucket_ para a inserção do registro,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9745; ou seja, é empregada a função **h<sub>j+1</sub> (K)**.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9745; ou seja, é empregada a função `**h<sub>j+1</sub> (K)**`.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x26BE; senão o valor resultante de **h<sub>j</sub> (K)** determina o _bucket_ para a inserção do registro.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9745; ou seja, é empregada a função **h<sub>j</sub> (K)**.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9745; ou seja, é empregada a função `**h<sub>j</sub> (K)**`.<br>
 
 Observar o conteúdo da figura abaixo:
 
