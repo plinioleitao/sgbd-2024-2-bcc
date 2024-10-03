@@ -11,10 +11,10 @@ O plano da disciplina está disponível [aqui](./media/sgbd-2024-2-bcc-plano.pdf
 
 ### `Tópicos ativos ...`
 
-- [Tópico 09](./topico/topico-09.md)
-- [Tópico 10](./topico/topico-10.md)
 - [Tópico 11](./topico/topico-11.md)
 - [Tópico 12](./topico/topico-12.md)
+- [Tópico 13](./topico/topico-13.md)
+- [Tópico 14](./topico/topico-14.md)
 - [Todos os tópicos](topico/topico-index.md)
 - [Análise das atividades](./topico/tresultado.md)
 

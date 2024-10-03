@@ -1,3 +1,5 @@
+[Tópico 14](./topico-14.md) - Estruturas de indexação (2/9) - Índice primário<br>
+[Tópico 13](./topico-13.md) - Estruturas de indexação (1/9) - Visão geral<br>
 [Tópico 12](./topico-12.md) - Estruturas de armazenamento (10/10) - Organização de arquivos _hashing_ (4/4)<br>
 [Tópico 11](./topico-11.md) - Estruturas de armazenamento (9/10) - Organização de arquivos _hashing_ (3/4)<br>
 [Tópico 10](./topico-10.md) - Estruturas de armazenamento (8/10) - Organização de arquivos _hashing_ (2/4)<br>
