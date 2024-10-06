@@ -9,3 +9,7 @@ Clique [AQUI](../media/sgbd-2024-2-bcc-resumo.pdf) para ver as notas.
 #### Avaliação em 19/09/2024
 
 (F) A função teto é em geral... (V) A função piso é em geral... (V) Quando o tamanho do bloco... (V) Em alocação de blocos... (F) Na política FIFO de gerência... (F) A política FIFO requer... (F) Na organização de registros não espalhada, é previsto... (V) A organização de registros não espalhada é aplicável... (F) O _pin-count_ determina se... (F) Se o _pin-count_ de uma página... (F) Independente do predicado de busca... (V) A busca binária em arquivos... (V) O tamanho do _buffer pool_ em geral... (F) Em arquivos com registros de tamanho fixo, o cabeçalho... (V) Registros de comprimento variável são aplicáveis... (F) Em registros de tamanho variável, qualquer... (V) O cabeçalho de arquivo em geral contém informações... (V) A estratégia _double buffering_ permite... (V) Em arquivos de registros de tamanho fixo e variável, os registros... (V) Há cenários em que o SGBD...
+
+#### Avaliação em 03/10/2024
+
+<img src="../media/ava-20241003-1.jpg" width="200"><img src="../media/ava-20241003-2.jpg" width="200"><img src="../media/ava-20241003-3.jpg" width="200">
