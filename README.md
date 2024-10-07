@@ -6,8 +6,11 @@ O plano da disciplina está disponível [aqui](./media/sgbd-2024-2-bcc-plano.pdf
 
 ### `Para refletir ...`
 
-- _Hashing_ é uma _organização de arquivo_ ou um _método de acesso_ ?
-- Quais as estratégias para o _hashing_ externo dinâmico ?
+- Qual a distinção entre os índices primário, de agrupamento e secundário ?
+- Qual a estrutura dos clássicos arquivos que seguem organização ISAM (_Indexed Sequential Access Method_) da IBM ?
+
+ISAM (indexed sequential access
+method) is
 
 ### `Tópicos ativos ...`
 
@@ -15,6 +18,7 @@ O plano da disciplina está disponível [aqui](./media/sgbd-2024-2-bcc-plano.pdf
 - [Tópico 12](./topico/topico-12.md)
 - [Tópico 13](./topico/topico-13.md)
 - [Tópico 14](./topico/topico-14.md)
+- [Tópico 15](./topico/topico-15.md)
 - [Todos os tópicos](topico/topico-index.md)
 - [Análise das atividades](./topico/tresultado.md)
 
