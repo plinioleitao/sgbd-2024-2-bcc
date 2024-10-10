@@ -1,3 +1,4 @@
+[Tópico 17](./topico-17.md) - Estruturas de indexação (5/9) - Índice secundário (2/2)<br>
 [Tópico 16](./topico-16.md) - Estruturas de indexação (4/9) - Índice secundário (1/2)<br>
 [Tópico 15](./topico-15.md) - Estruturas de indexação (3/9) - Índice de agrupamento<br>
 [Tópico 14](./topico-14.md) - Estruturas de indexação (2/9) - Índice primário<br>
