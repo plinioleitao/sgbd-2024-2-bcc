@@ -23,7 +23,7 @@ Clique [AQUI](../media/sgbd-2024-2-bcc-resumo.pdf) para ver as notas.
 #### Avaliação em 10/10/2024
 
 1.
-<img src="../media/ava-20241003-4.jpg" width="300">
+<img src="../media/ava-20241003-4.jpg" width="200">
 
 2. E-D-A-C-B
 3. Há menos registros de índice do que registros no arquivo de dados (um registro de índice para cada bloco de dados): a quantidade de registros impacta o número de blocos.<br>Um registro de índice é usualmente menor em tamanho do que um registro de dados: o tamanho do registro impacta o fator de bloco, que por sua vez impacta o número de blocos.
