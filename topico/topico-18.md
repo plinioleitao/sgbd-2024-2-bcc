@@ -58,7 +58,8 @@ Um <ins>índice múltinível</ins> pode ser pensado como <ins>índice sobre índ
 O número de registros do <ins>índice de nível j </ins> (j>1) é o número de blocos do <ins>índice de nível j-1</ins>:
 - Por ser similar a índice primário, o <ins>índice de nível j </ins> baseia-se no registro âncora de cada bloco do <ins>índice de nível j-1</ins>.
 - Exemplos: r<sub>i2</sub> = b<sub>i1</sub> , r<sub>i3</sub> = b<sub>i2</sub> , r<sub>i4</sub> = b<sub>i3</sub> , _and so on_ ...
-- Ver figura a seguir (no exemplo, o <ins>índice de 1<sup>o</sup> nível</ins> é um índice primário).
+- Ver figura a seguir (no exemplo, o <ins>índice de 1<sup>o</sup> nível</ins> é um índice primário):
+  - _That's a two-level primary index resembling **ISAM** (indexed sequential access method) organization_.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../media/arquivo-39.jpg" width="400">
 
