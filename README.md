@@ -22,6 +22,9 @@ O plano da disciplina está disponível [aqui](./media/sgbd-2024-2-bcc-plano.pdf
 
 ### `Avisos ativos ...`
 
+- Conversar com Administrador de Banco de Dados
+  - Data: 10/12/2024 (terça-feira)
+  - Local e horário: No local e horário da aula
 - ISSUE &#8212; Ao criar uma _**issue**_, selecione um dos _**templates**_:
   - **Dúvida em tópico específico**
   - **Dúvida fora do fluxo de tópicos**
