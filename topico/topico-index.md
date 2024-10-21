@@ -1,3 +1,5 @@
+[Tópico 20](./topico-20.md) - Estruturas de indexação (8/9) - Índice em árvore (2/3)<br>
+[Tópico 19](./topico-19.md) - Estruturas de indexação (7/9) - Índice em árvore (1/3)<br>
 [Tópico 18](./topico-18.md) - Estruturas de indexação (6/9) - Índice multinível<br>
 [Tópico 17](./topico-17.md) - Estruturas de indexação (5/9) - Índice secundário (2/2)<br>
 [Tópico 16](./topico-16.md) - Estruturas de indexação (4/9) - Índice secundário (1/2)<br>
