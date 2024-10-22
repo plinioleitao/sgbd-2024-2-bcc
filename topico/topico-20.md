@@ -29,6 +29,8 @@ A **`Árvore B`** possui restrições adicionais às árvores de busca, visando 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ..... uma inserção em um nó que já está cheio, ou<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ..... uma exclusão de um nó que o deixa menos da metade cheio.
 
+:question: Árvore de [Ordem p](../media/arvore-b-1.jpg)
+
 &#9752;&#9752; Seja uma **`ÁRVORE B DE ORDEM p`**:
 
 &#9918; Cada **<ins>NÓ (INTERNO e FOLHA)</ins>** possui a **`ESTRUTURA`**:
@@ -68,9 +70,12 @@ Onde:<br>
 &#9745; Os nós folhas têm a mesma estrutura dos nós internos.<br>
 &#9745; Em nós folhas, todos os ponteiros de árvore P<sub>i</sub> possuem valor NULO.
 
-A estrutura e algumas das restrições da `Árvore B` (acima mencinadas) estão evidentes na figura abaixo:
+A estrutura e algumas das restrições da `Árvore B` (acima mencionadas) estão evidentes na figura abaixo:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../media/arquivo-43.jpg" width="540">
+
+:question: [Número de mínimo de descendentes](../media/arvore-b-3.jpg).<br>
+:question: [Número de descendentes](../media/arvore-b-2.jpg).
 
 Um exemplo de uma `Árvore B de ordem 3` é exibido abaixo:
 
