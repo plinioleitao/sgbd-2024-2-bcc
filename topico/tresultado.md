@@ -28,3 +28,6 @@ Clique [AQUI](../media/sgbd-2024-2-bcc-resumo.pdf) para ver as notas.
 2. E-D-A-C-B
 3. Há menos registros de índice do que registros no arquivo de dados (um registro de índice para cada bloco de dados): a quantidade de registros impacta o número de blocos.<br>Um registro de índice é usualmente menor em tamanho do que um registro de dados: o tamanho do registro impacta o fator de bloco, que por sua vez impacta o número de blocos.
 
+#### Avaliação em 17/10/2024
+
+O campo de indexação é o campo de ordenação (primário, agrupamento); O campo de indexação é um campo chave (primário, secundário); O campo de indexação é um campo não-chave (agrupamento, secundário); Vários índices desse tipo podem ser criados para um mesmo arquivo de dados, mesmo que seus campos de indexação sejam distintos entre si (secundário); O índice é esparso (primário, agrupamento, secundário); O índice é denso (secundário); A busca binária pode ser aplicada na pesquisa via o índice (primário, agrupamento, secundário); O arquivo de índice é um arquivo ordenado ou não ordenado ().
