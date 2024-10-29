@@ -1,3 +1,5 @@
+[Tópico 22](./topico-22.md) - Processamento de Transações - Visão geral<br>
+[Tópico 21](./topico-21.md) - Estruturas de indexação (9/9) - Índice em árvore (3/3)<br>
 [Tópico 20](./topico-20.md) - Estruturas de indexação (8/9) - Índice em árvore (2/3)<br>
 [Tópico 19](./topico-19.md) - Estruturas de indexação (7/9) - Índice em árvore (1/3)<br>
 [Tópico 18](./topico-18.md) - Estruturas de indexação (6/9) - Índice multinível<br>
