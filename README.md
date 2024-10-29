@@ -6,7 +6,6 @@ O plano da disciplina está disponível [aqui](./media/sgbd-2024-2-bcc-plano.pdf
 
 ### `Para refletir ...`
 
-- É possível ter uma estrutura multinível para os índices primário, de agrupamento e secundário ?
 - Qual a estrutura dos clássicos arquivos que seguem organização ISAM (_Indexed Sequential Access Method_) da IBM ?
 
 ### `Tópicos ativos ...`
