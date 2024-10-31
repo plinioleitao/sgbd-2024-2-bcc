@@ -127,9 +127,9 @@ Sobre o **write_item(X)**:<br>
 &#9888; O SGBD gerenciará um número de _buffers_ [de dados] na memória principal (_cache_ de banco de dados).<br>
 &#9888; Cada _buffer_ tipicamente suporta o conteúdo de um bloco de disco:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;... e contém alguns dos itens do banco de dados que estão sendo processados.<br>
-&#9888; Quando esses buffers estão todos ocupados, e algum(ns) bloco(s) precisa(m) ser copiado(s) para a memória:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;... alguma política de substituição de buffer é utilizada,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;... se o buffer escolhido para substituição tiver sido modificado, ele deve ser escrito de volta para o disco antes que seja reusado.
+&#9888; Quando esses _buffers_ estão todos ocupados, e algum(ns) bloco(s) precisa(m) ser copiado(s) para a memória:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;... alguma política de substituição de _buffer_ é utilizada,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;... se o _buffer_ escolhido para substituição tiver sido modificado, ele deve ser escrito de volta para o disco antes que seja reusado.
 
 #### &#10004; <ins>`TRANSAÇÃO DE BD — Concorrência`</ins><br>
 
