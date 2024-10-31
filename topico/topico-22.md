@@ -185,7 +185,7 @@ Seja a figura abaixo, sobre **processamento intercalado** _versus_ **processamen
 
 &#9888; <ins>**`ESCALONAMENTO NÃO SERIAL de Transações` — O Problema da Atualização Perdida** </ins>
 
-&#9918; Uma transação <ins>_sobrepõe_</ins> a atualizadção de dados de outra transação:<br>
+&#9918; Uma transação <ins>_sobrepõe_</ins> a atualização de dados de outra transação:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;... na figura abaixo, T2 lê o valor de X (via _read_item_),<br>
 &nbsp;&nbsp;&nbsp;&nbsp;... mas antes que T1 alterasse X no banco de dados (via _write_item_),<br>
 &nbsp;&nbsp;&nbsp;&nbsp;... então, o valor atualizado resultante de T1 é perdido, e<br>
@@ -212,7 +212,7 @@ Seja a figura abaixo, sobre **processamento intercalado** _versus_ **processamen
 &#9888; <ins>**`ESCALONAMENTO NÃO SERIAL de Transações` — O Problema da Leitura "Irrepetível"** </ins>
 
 &#9918; Uma transação lê o mesmo item duas vezes, e o item é alterado por outra transação entre as duas leituras:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;... na figura abaixo, o cliente pergunta sobre a disponibilidade de assentos em vários voos,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;... como exemplo, o cliente pergunta sobre a disponibilidade de assentos em vários voos,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;... então, após a decisão do cliente, a reserva não pode ser confirmada,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;... pois há um valor diferente para o item (o voo selecionado).
 
