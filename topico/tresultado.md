@@ -39,3 +39,7 @@ O campo de indexação é o campo de ordenação (primário, agrupamento); O cam
 |01|5.p + 15.(p – 1) + 5.(p – 1) &#8804; B<br>25.p &#8804; 1024+20<br>p = piso(1044/25) &#8756; **p = 41**|5.p + 15.(p – 1) &#8804; B<br>20.p &#8804; 1024 + 15<br>p = piso(1039/20) &#8756; **p = 51**|
 |02|v = p – 1 = 41 – 1 &#8756; **v = 40**|v = p – 1 = 51 – 1 &#8756; **v = 50**|
 |03|**vfolha = 40**|vfolha.(15 + 5) + 5 &#8804; B<br>20.vfolha + 5 &#8804; 1024<br>vfolha = piso(1019/20) &#8756; **vfolha = 50**|
+|04|**k**|**k**|
+|05|**q * k**|**q * k**|
+|06|**q * q * kfolha**|**q * q * kfolha**|
+|07|**k + (q * k) + (q * q * kfolha)**|**q * q * kfolha**|
