@@ -31,3 +31,9 @@ Clique [AQUI](../media/sgbd-2024-2-bcc-resumo.pdf) para ver as notas.
 #### Avaliação em 17/10/2024
 
 O campo de indexação é o campo de ordenação (primário, agrupamento); O campo de indexação é um campo chave (primário, secundário); O campo de indexação é um campo não-chave (agrupamento, secundário); Vários índices desse tipo podem ser criados para um mesmo arquivo de dados, mesmo que seus campos de indexação sejam distintos entre si (secundário); O índice é esparso (primário, agrupamento, secundário); O índice é denso (secundário); A busca binária pode ser aplicada na pesquisa via o índice (primário, agrupamento, secundário); O arquivo de índice é um arquivo ordenado ou não ordenado ().
+
+#### Avaliação em 31/10/2024
+
+|Questão|Árvore B|Árvore B+|
+|:-:|:-:|:-:|
+|01|5.p + 15.(p – 1) + 5.(p – 1) &#8804; B<br>25p &#8804; 1024+20<br>p = piso(1044/25) &#8756; p = 41|5.p + 15.(p – 1) &#8804; B<br>20.p &#8804; 1024 + 15<br>p = piso(1039/20) &#8756; p = 51|
