@@ -6,7 +6,7 @@ O plano da disciplina está disponível [aqui](./media/sgbd-2024-2-bcc-plano.pdf
 
 ### `Para refletir ...`
 
-- Qual a distinção entre _escalonamento recuperável_ e _escalonamento recuperável_  ?
+- Qual a distinção entre _escalonamento recuperável_ e _escalonamento serializável_  ?
 
 ### `Tópicos ativos ...`
 
