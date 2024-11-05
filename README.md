@@ -6,14 +6,12 @@ O plano da disciplina está disponível [aqui](./media/sgbd-2024-2-bcc-plano.pdf
 
 ### `Para refletir ...`
 
-- Qual a estrutura dos clássicos arquivos que seguem organização ISAM (_Indexed Sequential Access Method_) da IBM ?
+- Qual a distinção entre _escalonamento recuperável_ e _escalnament recuperável_  ?
 
 ### `Tópicos ativos ...`
 
-- [Tópico 19](./topico/topico-19.md)
-- [Tópico 20](./topico/topico-20.md)
-- [Tópico 21](./topico/topico-21.md)
 - [Tópico 22](./topico/topico-22.md)
+- [Tópico 23](./topico/topico-23.md)
 - [Todos os tópicos](topico/topico-index.md)
 - [Análise das atividades](./topico/tresultado.md)
 

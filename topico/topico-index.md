@@ -1,3 +1,4 @@
+[Tópico 23](./topico-23.md) - Processamento de Transações - Escalonamento<br>
 [Tópico 22](./topico-22.md) - Processamento de Transações - Visão geral<br>
 [Tópico 21](./topico-21.md) - Estruturas de indexação (9/9) - Índice em árvore (3/3)<br>
 [Tópico 20](./topico-20.md) - Estruturas de indexação (8/9) - Índice em árvore (2/3)<br>
