@@ -1,3 +1,4 @@
+[Tópico 25](./topico-25.md) - Processamento de Transações - Escalonamento quanto à serialização<br>
 [Tópico 24](./topico-24.md) - Processamento de Transações - Escalonamento quanto à recuperação<br>
 [Tópico 23](./topico-23.md) - Processamento de Transações - Escalonamento<br>
 [Tópico 22](./topico-22.md) - Processamento de Transações - Visão geral<br>
