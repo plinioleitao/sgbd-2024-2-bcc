@@ -43,3 +43,16 @@ O campo de indexação é o campo de ordenação (primário, agrupamento); O cam
 |05|**q * k**|**q * k**|
 |06|**q * q * kfolha**|**q * q * kfolha**|
 |07|**k + (q * k) + (q * q * kfolha)**|**q * q * kfolha**|
+
+#### Avaliação em 14/11/2024
+
+|Questão|Árvore B|Árvore B+|
+|:-:|:-:|:-:|
+|01|**k**|**k**|
+|02|**q * k**|**q * k**|
+|03|**q * q * kfolha**|**q * q * kfolha**|
+|04|**k + (q * k) + (q * q * kfolha)**|**q * q * kfolha**|
+
+|Questão|Classificação|
+|:-:|:-:|
+|05a|R-COM; NR; R-SEM; NR; R-COM; NR|
