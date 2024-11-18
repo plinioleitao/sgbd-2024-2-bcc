@@ -55,4 +55,4 @@ O campo de indexação é o campo de ordenação (primário, agrupamento); O cam
 
 |Questão|Classificação|
 |:-:|:-:|
-|05a|R-COM; NR; R-SEM; NR; R-COM; NR|
+|05|R-COM; NR; R-SEM; NR; R-COM; NR|
