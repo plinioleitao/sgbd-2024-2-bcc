@@ -122,7 +122,7 @@ Observar abaixo o grafo de precedência dos escalonamentos S<sub>a</sub>, S<sub>
 
 Observar abaixo dois escalonamentos, seus grafos de precedência e suas análises.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../media/arquivo-76.jpg" width="600">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../media/arquivo-76.jpg" width="1600">
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../media/arquivo-75.jpg" width="600">
 
