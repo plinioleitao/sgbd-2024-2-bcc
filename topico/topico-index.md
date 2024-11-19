@@ -1,3 +1,4 @@
+[Tópico 26](./topico-26.md) - Processamento de Transações - Bloqueio de itens do banco de dados<br>
 [Tópico 25](./topico-25.md) - Processamento de Transações - Escalonamento quanto à serialização<br>
 [Tópico 24](./topico-24.md) - Processamento de Transações - Escalonamento quanto à recuperação<br>
 [Tópico 23](./topico-23.md) - Processamento de Transações - Escalonamento<br>
