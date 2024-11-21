@@ -1,3 +1,5 @@
+[Tópico 28](./topico-28.md) - Processamento de Transações - _Deadlock_ e _starvation_<br>
+[Tópico 27](./topico-27.md) - Processamento de Transações - Concorrência baseada em bloqueio<br>
 [Tópico 26](./topico-26.md) - Processamento de Transações - Bloqueio de itens do banco de dados<br>
 [Tópico 25](./topico-25.md) - Processamento de Transações - Escalonamento quanto à serialização<br>
 [Tópico 24](./topico-24.md) - Processamento de Transações - Escalonamento quanto à recuperação<br>
