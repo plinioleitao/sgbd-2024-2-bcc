@@ -1,3 +1,4 @@
+[Tópico 29](./topico-29.md) - Processamento de Transações - Concorrência baseada em _timestamp_<br>
 [Tópico 28](./topico-28.md) - Processamento de Transações - _Deadlock_ e _starvation_<br>
 [Tópico 27](./topico-27.md) - Processamento de Transações - Concorrência baseada em bloqueio<br>
 [Tópico 26](./topico-26.md) - Processamento de Transações - Bloqueio de itens do banco de dados<br>
