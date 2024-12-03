@@ -56,3 +56,19 @@ O campo de indexação é o campo de ordenação (primário, agrupamento); O cam
 |Questão|Classificação|
 |:-:|:-:|
 |05|R-COM; NR; R-SEM; NR; R-COM; NR|
+7
+
+#### Avaliação em 28/11/2024
+
+|Questão|Sentença|Resposta|
+|:-:|-|:-:|
+|01|Libera os bloqueios compartilhados somente ao final da transação|08|
+|02|Libera os bloqueios exclusivos somente ao final da transação|12|
+|03|Garante que o escalonamento é livre de deadlock|02|
+|04|Há o bloqueio de todos os itens antes que a transação comece a ser executada|02|
+|05|Promove a concorrência em relação ao bloqueio sem ser em duas fases|00|
+|06|Garante que o escalonamento é serializável|15|
+|07|Garante que o escalonamento é recuperável|12|
+|08|Garante que o escalonamento é estrito quanto à recuperabilidade|12|
+|09|Inclui o conjunto de escalonamentos seriais|00|
+|10|Inclui o conjunto de escalonamentos serializáveis|00|
