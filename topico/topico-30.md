@@ -58,7 +58,7 @@ Abaixo está uma classificação simples de falhas no contexto de banco de dados
         <tr>
             <td><b>Mídia</b></td>
             <td>&#10004; Perda de conteúdo não-volátil</td>
-            <td>SGBD recupera o banco de dados<br>pelo uso de <i>backups</i></td>
+            <td>SGBD recupera o banco de dados<br>pelo uso de <i>backups</i> (db + logs)</td>
         </tr>     
 </tbody>
 </table>
