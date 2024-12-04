@@ -88,6 +88,12 @@ Ou seja, se as transações aguardam apenas por transações mais antigas, nenhu
 
 Os protocolos `esperar-ou-morrer` e `ferir-ou-esperar` podem abortar e reiniciar transações desnecessariamente, pois tais transações não estavam em ciclos de espera de _deadlocks_ ??
 
+#### &#10004;&#10004; PROTOCOLO (TÉCNICA) `TEMPO ESGOTADO` &#8212; _TIMEOUT_
+
+Suponha que o item `X foi bloqueado por Tx`, e depois `Ty tenta bloquear X`:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... `Ty esperará algum tempo (período de _timeout_)`, o qual é determinado pelo administrador de banco de dados, na 'esperança' de sair do estado de espera;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... se Ty permanecer em estado de espera após esse tempo, ty será cancelada (abortada) [pelo SGBD] e reiniciada.<br>
+
 #### &#10004;&#10004; PROTOCOLO (TÉCNICA) `SEM-ESPERA` &#8212; _NO WAITING (NW)_
 
 Suponha que o item `X foi bloqueado por Tx`, e depois `Ty tenta bloquear X`:<br>
