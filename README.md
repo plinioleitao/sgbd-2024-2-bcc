@@ -24,6 +24,7 @@ O plano da disciplina está disponível [aqui](./media/sgbd-2024-2-bcc-plano.pdf
 ### `Avisos ativos ...`
 
 - **Conversa com Administrador de Banco de Dados**
+  - Prof. Wendel Brustolin (wendel@dbsti.com.br)
   - Data: 10/12/2024 (terça-feira)
   - Local e horário: No local e horário da aula
 - ISSUE &#8212; Ao criar uma _**issue**_, selecione um dos _**templates**_:

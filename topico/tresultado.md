@@ -72,3 +72,9 @@ O campo de indexação é o campo de ordenação (primário, agrupamento); O cam
 |08|Garante que o escalonamento é estrito quanto à recuperabilidade|12|
 |09|Inclui o conjunto de escalonamentos seriais|00|
 |10|Inclui o conjunto de escalonamentos serializáveis|00|
+
+#### Avaliação em 05/12/2024
+
+|Questão|01|02|03|04|05|06|07|08|09|10|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|Resposta|00|03|02|03|03|03|01|01|02|03|
