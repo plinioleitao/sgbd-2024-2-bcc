@@ -1,3 +1,5 @@
+[Tópico 35](./topico-35.md) - Recuperação Após Falhas - _Checkpoint_<br>
+[Tópico 34](./topico-34.md) - Recuperação Após Falhas - Exemplos<br>
 [Tópico 33](./topico-33.md) - Recuperação Após Falhas - Implementação das políticas de atualização<br>
 [Tópico 32](./topico-32.md) - Recuperação Após Falhas - Exercícios<br>
 [Tópico 31](./topico-31.md) - Recuperação Após Falhas - Políticas de atualização<br>
